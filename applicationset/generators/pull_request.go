@@ -85,8 +85,8 @@ func (g *PullRequestGenerator) GenerateParams(appSetGenerator *argoprojiov1alpha
 
 	var shortSHALength int
 	for _, pull := range pulls {
-		shortSHALength = 8
-		if len(pull.HeadSHA) < 8 {
+		shortSHALength = 7
+		if len(pull.HeadSHA) < 7 {
 			shortSHALength = len(pull.HeadSHA)
 		}
 
